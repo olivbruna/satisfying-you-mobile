@@ -29,10 +29,9 @@ const RecuperarSenha = () => {
     <PaperProvider theme={theme}>
       <View style={styles.backgroundView}>
         <View style={styles.formContainer}>
-          <Text style={styles.label}>Email</Text>
           <TextInput
             style={styles.input}
-            label=""
+            label="Email"
             value={email}
             onChangeText={text => {
               setEmail(text);
@@ -83,12 +82,6 @@ const styles = StyleSheet.create({
   recoverButtonLabel: {
     fontFamily: 'AveriaLibre-Regular',
     fontSize: 20,
-  },
-  label: {
-    color: 'white',
-    fontSize: 20,
-    marginBottom: 5,
-    fontFamily: 'AveriaLibre-Regular',
   },
 });
 

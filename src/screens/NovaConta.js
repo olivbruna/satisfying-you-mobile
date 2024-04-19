@@ -42,28 +42,25 @@ const NovaConta = (props) => {
     <PaperProvider theme={theme}>
       <View style={styles.backgroundView}>
         <View style={styles.formContainer}>
-          <Text style={styles.label}>Email</Text>
           <TextInput
             style={styles.input}
-            label=""
+            label="Email"
             value={email}
             onChangeText={text => {setEmail(text); setInvalidEmail(false);}}
           />
           {invalidEmail && <Text style={styles.invalidText}>E-mail inválido</Text>}
 
-          <Text style={styles.label}>Senha</Text>
           <TextInput
             style={styles.input}
-            label=""
+            label="Senha"
             value={senha}
             onChangeText={text => {setSenha(text); setInvalidPassword(false);}}
             secureTextEntry={true}
           />
 
-          <Text style={styles.label}>Repetir Senha</Text>
           <TextInput
             style={styles.input}
-            label=""
+            label="Repetir Senha"
             value={senhaAgain}
             onChangeText={text => {setSenhaAgain(text); setInvalidPassword(false);}}
             secureTextEntry={true}
@@ -96,13 +93,13 @@ const styles = StyleSheet.create({
   input: {
     backgroundColor: 'white',
     borderRadius: 5,
-    marginBottom: 10,
+    marginBottom: 20,
   },
   newAccountButton: {
     backgroundColor: '#37BD6D',
     borderRadius: 5,
     alignItems: 'center',
-    marginTop: 20,
+    marginTop: 5,
     padding: 5,
   },
   invalidText: {
@@ -113,12 +110,6 @@ const styles = StyleSheet.create({
     fontFamily: 'AveriaLibre-Regular',
     color: '#fff',
     fontSize: 21,
-  },
-  label: {
-    color: 'white',
-    fontSize: 20,
-    marginBottom: 5,
-    fontFamily: 'AveriaLibre-Regular',
   },
 });
 
